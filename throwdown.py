@@ -12,7 +12,7 @@ mapping = {
 }
 
 while True:
-    input_actions = input("Rock/Paper/Scissors (R / P / S) or Quit (Q): ").lower()
+    input_actions = input("Rock/Paper/Scissors じゃんけん (R / P / S) or Quit やめる (Q): ").lower()
     if input_actions == "q":
         break
     
@@ -22,18 +22,18 @@ while True:
     random_actions = random.randint(0, 2)
     pc_pick = variant[random_actions]
 
-    print("Yuno picked", mapping[pc_pick])
+    print("Captin Yami picked", mapping[pc_pick])
 
     if input_actions == "p" and pc_pick == "rock":
-        print("You Won haha!")
+        print("You Won haha! よくやった")
         player_wins += 1
         
     elif input_actions == "r" and pc_pick == "scissors":
-        print("You Won baka!")
+        print("You Won baka! ニース")
         player_wins += 1
         
     elif input_actions == "s" and pc_pick == "paper":
-        print("You Won OwO!")
+        print("You Won OwO! 頑張れ子ちゃん")
         player_wins += 1
         
     elif (input_actions == "r" and pc_pick == "rock") or \
@@ -41,9 +41,9 @@ while True:
          (input_actions == "s" and pc_pick == "scissors"):
         print("Draw!")  
     else:
-        print("You think u can beat me! Baka, You Lost")
+        print("You think u can beat me! Baka ばーか, You Lost")
         pc_wins += 1
 
 print(f"You Won {player_wins} times.")
-print(f"Yuno won {pc_wins} times.")
+print(f"Captin Yami won {pc_wins} times.")
 print("Sayonara!!!!")
