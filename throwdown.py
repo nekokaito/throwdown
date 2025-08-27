@@ -21,6 +21,19 @@ while True:
      if input_actions == "paper" and pc_pick == "rock":
           print("You Won haha!")
           player_wins += 1
+          
+     elif input_actions == "rock" and pc_pick == "scissors":
+          print("You Won baka!")
+          player_wins += 1
+          
+     elif input_actions == "scissors" and pc_pick == "paper":
+          print("You Won OwO!")
+          player_wins += 1
+          
+     else:
+          print("You think u can beat me! Baka, You Lost")
+          pc_wins +=1
+          
 
 print("Sayonara!!!!")
           
