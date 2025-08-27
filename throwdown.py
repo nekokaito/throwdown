@@ -6,5 +6,11 @@ pc_wins = 0
 while True:
      input_actions = input("Rock/Paper/Scissors or Quit").lower()
      if input_actions == "quit":
-          quit()
+          break
      
+     if input_actions not in ["rock", "paper", "scissors"]:
+          continue
+
+
+print("Sayonara!!!!")
+          
